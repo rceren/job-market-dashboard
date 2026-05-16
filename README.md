@@ -1,7 +1,8 @@
 # 📊 Job Market Dashboard
 
 🌐 **Live Demo:** 
-https://job-market-dashboard-tkel.onrender.com
+https://job-market-dashboard-tkel.onrender.com  
+*(may take ~1 min to load on first visit — free tier goes to sleep when inactive)*
 
 A data analysis project that processes 123,849 real LinkedIn job postings and displays insights in an interactive web dashboard.
 
