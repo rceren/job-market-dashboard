@@ -1,0 +1,4 @@
+venv/ 
+jobs.db 
+postings.csv 
+__pycache__/ 
