@@ -1,5 +1,8 @@
 # 📊 Job Market Dashboard
 
+🌐 **Live Demo:** 
+https://job-market-dashboard-tkel.onrender.com
+
 A data analysis project that processes 123,849 real LinkedIn job postings and displays insights in an interactive web dashboard.
 
 Built to practice real-world data analysis skills using Python, SQL, and data visualization.
@@ -44,8 +47,6 @@ Download from [Kaggle](https://www.kaggle.com/datasets/arshkon/linkedin-job-post
 
 **5. Parse the data**
 python parser.py
-
-Open your browser at `http://127.0.0.1:5000`
 
 ## 💡 Key Insights
 
