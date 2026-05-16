@@ -24,7 +24,7 @@ Built to practice real-world data analysis skills using Python, SQL, and data vi
 
 ## 📸 Dashboard Preview
 
-![Dashboard](screenshot.png)
+![Dashboard](Screenshot.png)
 
 ## 🚀 How to Run
 
