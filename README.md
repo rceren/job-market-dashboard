@@ -45,6 +45,11 @@ Download from [Kaggle](https://www.kaggle.com/datasets/arshkon/linkedin-job-post
 **5. Parse the data**
 python parser.py
 
+**6. Launch the dashboard**
+python app.py
+
+Then open your browser at http://127.0.0.1:5000
+
 ## 💡 Key Insights
 
 - **123,849** job postings analyzed
