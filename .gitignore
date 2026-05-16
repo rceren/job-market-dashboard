@@ -1,4 +1,3 @@
-venv/ 
-jobs.db 
+venv/
 postings.csv 
 __pycache__/ 

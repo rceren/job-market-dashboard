@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: job-market-dashboard
+    env: python
+    buildCommand: "pip install -r requirements.txt && python parser.py"
+    startCommand: "gunicorn app:app"
+    
