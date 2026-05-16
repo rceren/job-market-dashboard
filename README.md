@@ -1,9 +1,5 @@
 # 📊 Job Market Dashboard
 
-🌐 **Live Demo:** 
-https://job-market-dashboard-1.onrender.com 
-*(may take ~1 min to load on first visit; free tier goes to sleep when inactive)*
-
 A data analysis project that processes 123,849 real LinkedIn job postings and displays insights in an interactive web dashboard.
 
 Built to practice real-world data analysis skills using Python, SQL, and data visualization.
