@@ -1,4 +1,5 @@
 from flask import Flask
+from functools import lru_cache
 import sqlite3
 import json
 from analyze import (get_top_job_titles, get_top_companies, 
@@ -6,21 +7,23 @@ from analyze import (get_top_job_titles, get_top_companies,
 
 app = Flask(__name__)
 
-@app.route("/")
-def index():
+@lru_cache(maxsize=1)
+def get_cached_data():
     conn = sqlite3.connect('jobs.db')
     cursor = conn.cursor()
-
     titles = get_top_job_titles(cursor)
     companies = get_top_companies(cursor)
     locations = get_top_locations(cursor)
-    avg_salary, min_salary, max_salary = get_salary_stats(cursor)
+    salary = get_salary_stats(cursor)
     skills = get_top_skills(cursor)
-
     cursor.execute("SELECT COUNT(*) FROM postings")
     total_jobs = cursor.fetchone()[0]
-
     conn.close()
+    return titles, companies, locations, salary, skills, total_jobs
+
+@app.route("/")
+def index():
+   titles, companies, locations, (avg_salary, min_salary, max_salary), skills, total_jobs = get_cached_data()
 
     title_labels = json.dumps([t[0] for t in titles])
     title_values = json.dumps([t[1] for t in titles])
